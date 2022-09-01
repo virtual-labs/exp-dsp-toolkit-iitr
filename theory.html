@@ -1,0 +1,487 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'IITR',
+        'phase': 'Testing',
+        'expName': 'DIGITAL SIGNAL PROCESSING TOOLKIT',
+        'expShortName': 'dsp-toolkit'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="dsp-toolkit">
+    	<meta name="developer-institute" content="IITR">
+    	<meta name="learning-unit" content="DIGITAL SIGNAL PROCESSING TOOLKIT">
+    	<meta name="task-name" content="Theory">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+    
+  </head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center justify-content-end">
+              <bug-report id="bug-report" title="[BUG REPORT] Virtual Labs DIGITAL SIGNAL PROCESSING TOOLKIT" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;IITR&quot;,&quot;expname&quot;:&quot;DIGITAL SIGNAL PROCESSING TOOLKIT&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Incorrect Content&quot;,&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Incorrect Content&quot;,&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect content&quot;]}" button_style="border: none; color: #fff; background-color: #288ec8; text-align: center; font-size: 1.05rem; border-radius: 1em;padding: 0.6em 1.2em; margin: 0 10px" position="override" custom_button_class="v-button"></bug-report>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+          <div class="row py-4 px-4 breadcrumbs">
+          	<div class="title is-4 tools">Tools</div>
+          	<span class="mx-2">
+          		<i aria-hidden="true" class="fa fa-angle-right"></i>
+          	</span>
+          	<a href="performance-report.html" target="_blank">
+          		<button class="v-button">Performance Tool</button>
+          	</a>
+          </div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2  current-item ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Pretest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Posttest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2  current-item ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Pretest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Posttest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="digital-signal-processing-toolkit">Digital Signal Processing Toolkit</h2>
+          
+            </div>
+              <h3 id="digital-signal-processing-toolkit">Digital Signal Processing Toolkit</h3>
+          <br>
+          Digital Signal Processing is concerned with the representation of signals by a sequence of numbers or symbols and the processing of these signals. Digital signal processing and analog signal processing are subfields of signal processing. DSP includes subfields audio and speech signal processing, sonar and radar signal processing, sensor array processing, spectral estimation, statistical signal processing, digital image processing, signal processing for communications, control of systems, biomedical signal processing, seismic data processing, etc.<br>
+          
+          <p>The goal of DSP is usually to measure, filter and/or compress continuous real-world analog signals. The first step is usually to convert the signal from an analog to a digital form, by sampling it using an analog-to-digital converter (ADC), which turns analog signal into a stream of numbers. However, often, the required output signal is another analog output signal, which requires a digital-to-analog converter (DAC). Even if this process is more complex than analog processing and has a discrete value range, the application of computational power to digital signal processing allows for many advantages over analog processing in many applications, such as error detection and correction in transmission as well as data compression.<br></p>
+          <h3 id="signal-statistics">Signal Statistics<br></h3>
+          <p>This function calculates the following parameters:
+          <u>Arithmetic</u><u> </u><u>Mean</u> -&nbsp; The sum of the values  of a variable divided by  the number of values is <br>
+                called arithmetic mean.
+          <img alt="" src="images/Image_001.jpg" style="width:419px;height:47px"><br>
+          <u>Variance</u> -&nbsp;The calculation of how far values lie  from the mean value  in any distribution curve is  done using variance.
+          <img alt="" src="images/Image_002.jpg" style="width:163px;height:48px"><br>
+           (Where X is any  random variable, or E[X] is  its mean and Var(X)  its variance.)<br>
+           <u>Mode</u> - The value  that occurs most frequently in any distribution curve is called  its  mode.<br>
+           <br>
+          <u>RMS</u> - The root mean square, also known as  the  quadratic mean,  is a statistical measure  of the magnitude of any  varying quantity.<br><br>
+          <u>Standard deviation</u> - It measures  how  much a distribution is spread.  It is the square root of variance.
+          <img alt="" src="images/Image_003.jpg" style="width:182px;height:29px">
+          Where x is any  random variable, µ or E(x) is  its  mean and its standard deviation.
+          <u>Skewness</u> - It is  a measure of the asymmetry of the  probability distribution of a random  variable.
+          <img alt="" src="images/Image_004.jpg" style="width:260px;height:70px">
+          Where x  is any random variable, µ or E(x) is mean and is third  standardized moment or  skewness.
+          <u>Kurtosis</u> - It is a measure of peakedness of any curve and is  normalized form of fourth  standardized moment.
+          <img alt="" src="images/Image_005.jpg" style="width:32px;height:39px">is fourth standardized moment.
+          <u>Median</u>- It is defined as  the  numeric value separating  the higher half of  a sample, from the lower half.<br></p>
+          <h3 id="convolution-">Convolution <br></h3>
+          <p><u>Convolution </u> - It is a mathematical way of combining two signals  to form a third signal,
+          defined as the integral of the product of the two functions  after one is reversed  and shifted. Convolution  of 2 signals f and g is given  as:
+          <img alt="" src="images/Image_006.jpg" style="width:264px;height:47px">
+          <u>Cross Correlation</u> - In signal  processing, cross-correlation  is a measure of similarity of two waveforms  as a function of a  time-lag applied to one of  them. For continuous functions, f and g, the cross-correlation is defined as:
+          <img alt="" src="images/Image_007.jpg" style="width:276px;height:60px">
+          Where f  * denotes the complex  conjugate off.
+          <u>Autocorrelation </u> - It is the cross-correlation of a  signal with itself. Given a  signal f(t), the  continuous autocorrelation Rff is most often  defined as the continuous  cross-correlation integral of f(t) with itself, at lag.
+          <img alt="" src="images/Image_010.jpg" style="width:492px;height:48px"><br></p>
+          <h3 id="power-spectrum-">Power Spectrum <br></h3>
+          <p>Power Spectrum shows frequencies  containing the signal´s power,  by plotting  a distribution of power values  as a function of frequency, where "power" is considered to be the average of the signal². For a given  signal, the power spectrum gives a plot of the  portion of a signal's power  (energy<br>
+          per unit time) falling  within given frequency bins.  The  most common way of generating a power spectrum is by  using a discrete Fourier  transform, but other techniques  such as the maximum  entropy method  can also be used. <br>
+          <img alt="" src="images/Image_011.jpg" style="width:552px;height:397px"> <br></p>
+          <h3 id="histogram-">Histogram <br></h3>
+          <p>Histograms are used to plot density  of data, and  often for density  estimation: estimating the probability  density function of the  underlying variable. The total area  of a histogram used for probability  density is always normalized  to 1. If the length of the intervals on the x-axis are  all 1, then a histogram  is identical to a relative frequency plot.
+          <img alt="" src="images/Image_012.png" style="width:450px;height:295px"><br></p>
+          <h3 id="fft-fast-fourier-transform-">FFT (Fast Fourier Transform) <br></h3>
+          <p>An FFT  computes the DFT and  produces exactly  the same result as  evaluating the DFT definition directly;  the  only difference is that an FFT is  much faster. The basic idea is to break  up a transform of length into  two transforms of length using the identity.
+          <img alt="" src="images/Image_013.jpg" style="width:503px;height:60px"><img alt="" src="images/Image_014.jpg" style="width:386px;height:62px">
+          Since the fourier transform gives the information about the frequency component of any signal, it is used for finding out what are the frequencies present in the signal if the signal is stationary i.e. the frequency component of the signal is not changing with time. <br></p>
+          <h3 id="dct-discrete-cosine-transform-">DCT (Discrete Cosine Transform) <br></h3>
+          <p>A <strong>discrete  cosine transform </strong>(<strong>DCT</strong>) expresses a sequence of finitely  many &nbsp;<a href="http://en.wikipedia.org/wiki/Data_points">data points</a> in terms of a sum of <a href="http://en.wikipedia.org/wiki/Cosine">cosine</a> functions oscillating  at different &nbsp;<a href="http://en.wikipedia.org/wiki/Frequency">frequencies.</a> DCTs  are important to numerous<br>
+            applications in science  and engineering, from &nbsp;<a href="http://en.wikipedia.org/wiki/Lossy_compression">lossy compression of</a> &nbsp;<a href="http://en.wikipedia.org/wiki/Audio_compression_%28data%29">audio and</a> <a href="http://en.wikipedia.org/wiki/Image_compression">images</a> (where small  high-frequency components can  be discarded), to  &nbsp;<a href="http://en.wikipedia.org/wiki/Spectral_method">spectral methods</a> for the numerical  solution of <a href="http://en.wikipedia.org/wiki/Partial_differential_equations">partial differential equations.</a> The  use of <a href="http://en.wikipedia.org/wiki/Cosine">cosine</a> rather than&nbsp; <a href="http://en.wikipedia.org/wiki/Sine">sine</a> functions  is critical in these applications: for compression, it turns out that  cosine functions are much more efficient (as explained<br>
+            below, fewer are  needed to approximate a typical  &nbsp;<a href="http://en.wikipedia.org/wiki/Signal_%28electrical_engineering%29">signal),</a> whereas for differential equations the cosines express  a particular choice of &nbsp;<a href="http://en.wikipedia.org/wiki/Boundary_condition">boundary conditions.</a><br><br></p>
+          <img alt="" src="images/Image_015.jpg" style="width:602px;height:361px">
+          The Discrete Cosine Transform DCT  {X}  of a sequence X is defined  by  the following equations:
+          <img alt="" src="images/Image_016.jpg" style="width:541px;height:62px">
+          Where N is  the  length of X, xn  is the nth element  of X,yk is the kth element of DCT {X}<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+          <strong>DST</strong>- The Discrete  Sine Transform DST  {X}  of a sequence X is  defined by the  following equations:<br><br>
+          <img alt="" src="images/Image_017.jpg" style="width:216px;height:80px">
+          Where N is the length of the  input sequence X,xn is the nth  element of the input sequence  X, and yk is the kth  element of the output  sequence DST {X}.<br>
+          
+          <h3 id="hilbert-transform-">Hilbert Transform <br></h3>
+          <p>I<a href="http://en.wikipedia.org/wiki/Mathematics">n mathematics</a> and in &nbsp;<a href="http://en.wikipedia.org/wiki/Signal_processing">signal processing,</a> the Hilbert transform  is a&nbsp; <a href="http://en.wikipedia.org/wiki/Linear_operator">linear operator</a> which takes a function, u(t), and produces a function,  H(u)(t), with the same  domain. The Hilbert transform is named after <a href="http://en.wikipedia.org/wiki/David_Hilbert">David Hilbert,</a> who first  introduced the operator  in order to solve a special case  of  the &nbsp;<a href="http://en.wikipedia.org/wiki/Riemann%E2%80%93Hilbert_problem">Riemann–Hilbert problem</a> for &nbsp;<a href="http://en.wikipedia.org/wiki/Holomorphic_function">holomorphic functions.</a> It is a basic  tool in <a href="http://en.wikipedia.org/wiki/Fourier_analysis">Fourier  analysis,</a> and provides  a concrete means for realizing  the <a href="http://en.wikipedia.org/wiki/Conjugate_function">conjugate of</a> a given function  or&nbsp; <a href="http://en.wikipedia.org/wiki/Fourier_series">Fourier series.</a> Furthermore, in <a href="http://en.wikipedia.org/wiki/Harmonic_analysis">harmonic analysis,</a> it is an  example of a <a href="http://en.wikipedia.org/wiki/Singular_integral">singula</a>r &nbsp;<a href="http://en.wikipedia.org/wiki/Singular_integral">integral operator,</a> and of a <a href="http://en.wikipedia.org/wiki/Multiplier_%28Fourier_analysis%29">Fourier multiplier.</a> The Hilbert transform is also  important in the field of signal  processing where it is  used to derive the <a href="http://en.wikipedia.org/wiki/Analytic_signal">analytic representation of</a> a signal u(t). The Hilbert transform can be thought of as  the  convolution of u(t) with the  function h(t)=1/(3.14*t), and is  given by:
+          <img alt="" src="images/Image_018.jpg" style="width:468px;height:48px"></p>
+          <h3 id="wavelet-transform-">Wavelet Transform <br></h3>
+          <p><a href="http://en.wikipedia.org/wiki/Numerical_analysis">In  numerical analysis</a> and <a href="http://en.wikipedia.org/wiki/Functional_analysis">functional analysis,</a> a discrete wavelet transform  (DWT) is any <a href="http://en.wikipedia.org/wiki/Wavelet_transform">wavelet transform for</a> which the <a href="http://en.wikipedia.org/wiki/Wavelet">wavelets</a> are discretely sampled. As with other wavelet transforms, a key advantage  it has over <a href="http://en.wikipedia.org/wiki/Fourier_transform">Fourier transforms is</a> temporal  resolution: it captures  both frequency and location  information (location in time).
+          The wavelet  transform replaces the  Fourier transform's sinusoidal waves  by  a family generated by translations and dilations  of a window called a  wavelet.It includes two types of wavelets:  orthogonal (Haar, Daubechies  (dbxx), Coiflets (coifx), Symmlets (symx)) and biorthogonal (Biorthogonal (biorx_x), including  FBI (bior4_4 (FBI))), where x indicates the order of the  wavelet.
+          The higher the order,  the smoother the wavelet.</p>
+          <h3 id="chirp-z-transform-">Chirp-Z Transform <br></h3>
+          <p>Bluestein's FFT algorithm  , commonly called  the chirp z-transform algorithm, is a Fast Fourier  transform (FFT)  algorithm that computes the Discrete Fourier  transform (DFT) of arbitrary  sizes (including prime sizes)  by re-expressing  the DFT as a convolution.<br></p>
+          <h3 id="ir-infinite-impulse-response-filters-">IR (Infinite Impulse Response) Filters <br></h3>
+          <p><strong>Infinite impulse response (IIR)</strong><strong> </strong>is a property  of signal processing systems.  Systems with this property  are known as IIR systems  or, when dealing with <a href="http://en.wikipedia.org/wiki/Filter_%28signal_processing%29">filter</a> systems, as IIR filters. IIR systems  have an &nbsp;<a href="http://en.wikipedia.org/wiki/Impulse_response">impulse response</a> function that is non-zero  over an infinite length  of time. This  is in contrast to &nbsp;<a href="http://en.wikipedia.org/wiki/Finite_impulse_response">finite impulse response</a> (FIR) filters, which  have fixed-duration impulse  responses. The simplest  analog IIR filter is an <a href="http://en.wikipedia.org/wiki/Rc_circuit">RC</a> filter made  up  of a single &nbsp;<a href="http://en.wikipedia.org/wiki/Resistor">resistor</a>feeding into a node  shared with a sing<a href="http://en.wikipedia.org/wiki/Capacitor">le capacitor (C).</a> This filter  has  an exponential impulse  response characterized by an <a href="http://en.wikipedia.org/wiki/RC_time_constant">RC time constant.</a>
+          IIR filters  may be implemented as either  analog or digital filters.Digital  filters are implemented in terms of the difference equation  as given below:
+          <img alt="" src="images/Image_019.jpg" style="width:432px;height:72px">
+          P is the feedforward  filter order,
+          bi the feedforward filter coefficients, Q is the  feedback filter order,<br>
+          ai are the  feedback filter coefficients, x[n] is the input signal and<br><br>
+          These are commonly  referred to as taps (the  number of inputs). y[n]  is the output signal</p>
+          <h3 id="fir-finite-impulse-response--filters-">FIR (Finite Impulse Response)  Filters <br></h3>
+          <p>Finite Impulse  Response filters  are  one of the primary types of filters  used in Digital  Signal &nbsp;Processing. FIR filters are  said to be finite because they  do  not have any feedback. To study any Filter  we plot 2 graphs - the Magnitude  response curve (magnitude vs. frequency curve)  and Phase response curve  (phase vs. frequency curve).
+          <img alt="" src="images/Image_020.jpg" style="width:396px;height:156px">
+          The difference equation that  defines the output of an FIR filter in terms of  its input is:
+          <img alt="" src="images/Image_021.jpg" style="width:420px;height:35px">
+          x[n] is the input signal, y[n]  is the output signal, 
+          bi are the filter coefficients,  also known as tap weights, and N is the filter order - an Nth-order filter has (N + 1) terms on the right-hand  side.<br></p>
+          <h3 id="window-implementation-">Window Implementation <br></h3>
+          <p><img alt="" src="images/Image_022.jpg" style="width:575px;height:345px"><br></p>
+          <h3 id="signal-filtering-">Signal Filtering <br></h3>
+          <p>Signal filtering involves addition of noise to input signal and then filtering the distorted signal with the help of previous discussed filters.<br></p>
+          <h3 id="median-filter-">Median Filter <br></h3>
+          <p>The median filter is a nonlinear  digital filtering technique, often  used to remove noise. The Median  Filter obtains the elements of Filtered  X using  the following equation:
+          yi = Median(Ji) for i = 0, 1, 2, …,  n - 1,
+          Where Y represents the output  sequence filtered X, n is the number of elements in the input sequence X,
+          Ji is a subset of the  input sequence X centered  about the ith element  of X, and the indexed elements outside  the range of X equal zero.<br></p>
+          <h3 id="smoothing-filter-">Smoothing Filter <br></h3>
+          <p>Smoothing filters are also called low-pass  filters because they let  low  frequency components pass  and reduce the high frequency components. The impulse response of a normal  low-pass filter implies  that all the coefficients of the mask should be  positive. Low-pass filtering in effect blurs the image and removes speckles of high frequent  noise. Larger masks will result in more blurring effect. To avoid a  general amplification or damping of the data the sum of the  filter coefficients should be 1.0.
+          Many different  algorithms are used in smoothing. One of the most common algorithms is the "moving average", often  used to try to capture  important trends in repeated statistical surveys.
+          Given a series of  numbers and a fixed subset  size, the moving  average can be obtained by first taking the average of the  first subset. The fixed subset size is then shifted forward,  creating a new subset of numbers, which is  averaged. This process is repeated over  the entire data series.  The  plot line connecting all the (fixed) averages is the moving  average. Thus, a moving  average is not a single number,  but it is a set of numbers,  each of which is  the average of the corresponding  subset of a larger  set  of data points. A moving  average may also use unequal weights for  each  data value in the subset  to emphasize particular values in the  subset.<br></p>
+          <h3 id="compression-">Compression <br></h3>
+          <p>Acquires a large number of data points  and compresses  the data points into a smaller number of points by applying reduction methods to  input signal on basis of value contained  in  each segment.
+          Consider for example:  An input sine wave of  frequency 30 Hz and amplitude 5V is  given to a median filter. Let the reduction factor be 25. This means at a time, 25 data  points are taken and  the average is taken.  Again, this point is plotted  and the  next 25 data points are considered and the average is  taken. This process goes on repeating itself to get the  compressed data.<br>
+          The value -1.00978 specifies  the instantaneous mean of the current reduction  factor size.<br></p>
+          
+          </div>
+              <div class="bug-report-mobile">
+                  <bug-report id="bug-report" title="[BUG REPORT] Virtual Labs DIGITAL SIGNAL PROCESSING TOOLKIT" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;IITR&quot;,&quot;expname&quot;:&quot;DIGITAL SIGNAL PROCESSING TOOLKIT&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Incorrect Content&quot;,&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Incorrect Content&quot;,&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect content&quot;]}" position="override" button_style="
+                          position: fixed; 
+                          bottom: 20px;
+                          right: 20px;
+                          z-index: 1;
+                          font-size: 0;
+                          padding: 25px;
+                          border-radius: 50%;
+                          border: none;
+                          background-color: #0fc0ff;
+                          background-image: url(data:image/png;base64,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);
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          background-size: 30px;
+                          filter: invert(1);
+                      "></bug-report>
+              </div>
+        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fa fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fa fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fa fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fa fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+    <script>
+      document.getElementById('bug-report').addEventListener('submitted', (e)=>{
+          alert(event.detail.message)
+      })
+    </script>
+    <script src="./assets/js/toggleSidebar.js"></script>
+  
+
+<script type="module" src="https://virtual-labs.github.io/svc-bug-report/client/src/bug-report.js"></script></body></html>
