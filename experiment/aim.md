@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To study General DSP functions, Transform functions, Filter functions, Compression methods and to design DSP.
